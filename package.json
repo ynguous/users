@@ -1,0 +1,27 @@
+{
+  "name": "user-auth-server",
+  "version": "0.0.1",
+  "description": "User Authorization",
+  "main": "user-server.js",
+  "scripts": {
+    "//": "set DEBUG=users:* && set PORT=3333 && set SEQUELIZE_CONNECT=sequelize-sqlite.yaml && node user-server",
+    "startComment": "npm run envDebug && npm run envPort && npm run envSequelize && node user-server",
+    "start": "node user-server",
+    "envDebug": "set DEBUG=users:*",
+    "envPort": "set PORT=3333",
+    "envSequelize": "set SEQUELIZE_CONNECT=sequelize-sqlite.yaml"
+  },
+  "author": "FB",
+  "license": "ISC",
+  "engines": {
+    "node": ">=5.x"
+  },
+  "dependencies": {
+    "debug": "^2.6.9",
+    "js-yaml": "^3.12.0",
+    "mysql": "^2.15.0",
+    "restify": "^4.3.4",
+    "sequelize": "^3.33.0",
+    "sqlite3": "^3.1.13"
+  }
+}
