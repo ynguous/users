@@ -4,7 +4,7 @@
   "description": "User Authorization",
   "main": "user-server.js",
   "scripts": {
-    "start": "node user-server",
+    "start": "node user-server"
   },
   "author": "FB",
   "license": "ISC",
