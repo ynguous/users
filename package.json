@@ -4,12 +4,7 @@
   "description": "User Authorization",
   "main": "user-server.js",
   "scripts": {
-    "//": "set DEBUG=users:* && set PORT=3333 && set SEQUELIZE_CONNECT=sequelize-sqlite.yaml && node user-server",
-    "startComment": "npm run envDebug && npm run envPort && npm run envSequelize && node user-server",
     "start": "node user-server",
-    "envDebug": "set DEBUG=users:*",
-    "envPort": "set PORT=3333",
-    "envSequelize": "set SEQUELIZE_CONNECT=sequelize-sqlite.yaml"
   },
   "author": "FB",
   "license": "ISC",

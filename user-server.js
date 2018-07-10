@@ -104,7 +104,7 @@ server.get('/list', (req, res, next) => {
     .catch(err => { res.send(500, err); error(err.stack); next(false); });
 });
 
-server.listen(process.env.PORT, "localhost", function() {
+server.listen(process.env.PORT, process.env.UsersServer, function() {
   log(server.name +' listening at '+ server.url);
 });
 
